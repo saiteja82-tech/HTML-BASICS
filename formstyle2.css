@@ -1,0 +1,47 @@
+body{
+      align-items: center;
+      font-family: 'inter',sans-serif;
+      background-color: brown;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+
+      box-sizing: border-box;
+}
+
+form{
+    background-color:deeppink;
+
+    padding: 35px;
+}
+fieldset{
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: aquamarine;
+    
+}
+h1{
+    text-align: center;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: -0.5px;
+}
+
+.form-grop{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight:600px;
+    color: blueviolet;
+    font-size: 0.95em;
+}
+

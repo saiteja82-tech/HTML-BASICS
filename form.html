@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="formstyle2.css">
+</head>
+<body>
+    <form>
+     <fieldset>
+        <h1>User personal information</h1>
+        <label for="name">Enter your full name:</label>
+        <input type="text" id="name" placeholder="Enter your full name"/>
+        <br><br>
+        <label for="email">Enter your email:</label>
+        <input type="text" id="email" placeholder="Enter your email"/>
+        <br><br>
+        <label for="password">Enter your password:</label>
+        <input type="text" id="password" placeholder="Enter your password"/>
+        <br><br>
+        <label for="confirmpassword">Enter your confirmpassword:</label>
+        <input type="text" id="confirmpassword" required/>
+        <br><br>
+        <label>Enter your Moblie:</label>
+        <input type="tel" id="Moblie" pattern="[0-9]{10}" placeholder="enter your Moblie number"/>
+        <br><br>
+        <label for="country">Select your country:</label>
+        <select id="country" required>
+            <option value=""disaled select>select your country</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <select>
+        <br><br>
+        <label>Select your Gender:</label>
+        <div class="Gender group">
+        
+        <input type="radio" name="gender" value="male" id="Male" required/>
+        <label for="Male">Male</label>   
+
+        <input type="radio" name="gender" value="Female" id="Female" required/>
+        <label for="Female">Female</label>
+
+        
+        <input type="radio" name="Others" value="Others" id="Others" required/>
+        <label for="Others">Others</label>
+        <br><br>
+        <label for="dob">Enter your Date of Birth:</label>
+        <input type="date" id="dob" required/>
+        <br><br>
+        <label for="address">Enter to Address</label>
+        <textarea id="address" required></textarea>
+        </div>
+        <br><br>
+        <center><input type="submit" value="submit"/></center>
+     </fieldset>
+    </form>
+</body>
+</html>
+
