@@ -1,0 +1,60 @@
+body {
+  background-image:url("back-school.avif");
+  font-family: Georgia, serif;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.gender-options {
+  margin-top: 10px;
+}
+
+.gender-options label {
+  font-weight: normal;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #f0f0f0;
+}
