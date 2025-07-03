@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJIO Women Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+    }
+
+    ul.menu {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      padding: 0;
+    }
+
+    li.menu-item {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .mega-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 1000px;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      padding: 20px;
+      display: flex;
+      gap: 30px;
+      z-index: 999;
+    }
+
+    .menu-item:hover .mega-menu {
+      display: flex;
+    }
+
+    .column {
+      width: 180px;
+    }
+
+    .column h3 {
+      font-size: 16px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    .column a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      margin: 4px 0;
+    }
+
+    .column a:hover {
+      text-decoration: underline;
+    }
+
+    .new-tag {
+      color: red;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul class="menu">
+    <li class="menu-item">MEN</li>
+    <li class="menu-item">WOMEN
+      <div class="mega-menu">
+        <div class="column">
+          <h3>CLOTHING</h3>
+          <a href="#">FOOTWEAR</a>
+          <a href="#">ACCESSORIES</a>
+          <a href="#">ALL THAT'S NEW</a>
+          <a href="#">CURVE SIZE</a>
+          <a href="#">AJIO GLOBAL</a>
+          <a href="#">NIGHT & LOUNGEWEAR</a>
+          <a href="#">BEAUTY <span class="new-tag">NEW</span></a>
+          <a href="#">ATHLEISURE</a>
+          <a href="#">FUSION WEAR</a>
+        </div>
+        <div class="column">
+          <h3>ETHNIC WEAR</h3>
+          <a href="#">Kurtas</a>
+          <a href="#">Dress Material</a>
+          <a href="#">Salwars & Churidars</a>
+          <a href="#">Kurtis & Tunics</a>
+          <a href="#">Sarees</a>
+          <a href="#">Dupattas</a>
+          <a href="#">Kurta Suit Sets</a>
+          <a href="#">Blouses</a>
+          <a href="#">Leggings</a>
+          <a href="#">Skirts & Ghagras</a>
+          <a href="#">Shawls & Wraps</a>
+          <a href="#">Palazzos & Culottes</a>
+          <a href="#">Co-Ord Sets</a>
+        </div>
+        <div class="column">
+          <h3>JEWELLERY</h3>
+          <a href="#">Gold And Silver Coins</a>
+          <a href="#">Gold And Diamond Jewellery</a>
+          <a href="#">Silver Jewellery</a>
+          <a href="#">Fashion Jewellery</a>
+
+          <h3>LINGERIE & INNERWEAR</h3>
+          <a href="#">Bras</a>
+          <a href="#">Panties</a>
+          <a href="#">Camisoles & Slips</a>
+          <a href="#">Maternity Wear</a>
+          <a href="#">Thermal Wear</a>
+        </div>
+        <div class="column">
+          <h3>FOOTWEAR</h3>
+          <a href="#">Casual Shoes</a>
+          <a href="#">Flat Sandals</a>
+          <a href="#">Sports Shoes</a>
+          <a href="#">Flip Flop & Slippers</a>
+          <a href="#">Heeled Sandals</a>
+          <a href="#">Heeled Shoes</a>
+          <a href="#">Boots</a>
+          <a href="#">Woodland</a>
+        </div>
+        <div class="column">
+          <h3>ACCESSORIES</h3>
+          <a href="#">Sunglasses & Frames</a>
+          <a href="#">Watches</a>
+          <a href="#">Bag, Belts And Wallets</a>
+          <a href="#">Stoles And Scarves</a>
+          <a href="#">Socks And Stockings</a>
+          <a href="#">Caps</a>
+          <a href="#">Luggage & Trolleys</a>
+
+          <h3>FESTIVE EDITS</h3>
+          <a href="#">Kerala Sarees</a>
+          <a href="#">Diwali Dresses</a>
+          <a href="#">Diwali Sarees</a>
+
+          <h3>WESTERN WEAR</h3>
+          <a href="#">Tops</a>
+          <a href="#">T-Shirts</a>
+          <a href="#">Jeans & Jeggings</a>
+          <a href="#">Dresses</a>
+          <a href="#">Trousers & Pants</a>
+          <a href="#">Shirts</a>
+          <a href="#">Track Pants</a>
+          <a href="#">Skirts & Shorts</a>
+          <a href="#">Jackets & Coats</a>
+        </div>
+      </div>
+    </li>
+    <li class="menu-item">KIDS</li>
+    <li class="menu-item">BEAUTY</li>
+    <li class="menu-item">HOME & KITCHEN</li>
+  </ul>
+</nav>
+
+</body>
+</html>

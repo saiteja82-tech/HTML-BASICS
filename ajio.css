@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+header {
+  background-color: whitesmoke;
+  color: navy;
+  padding: 25px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+.user-actions a {
+  color: black;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+nav {
+  background-color: wheat;
+  color: rgb(6, 6, 6);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: whitesmoke;
+}
+
+.banner {
+  background-color: whitesmoke;
+  color: whitesmoke;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.category {
+  text-align: center;
+  cursor: pointer;
+}
+
+.category img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  background-color: burlywood;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(68, 245, 4, 0.1);
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  background-color: #1d3a47;
+  color: rgba(177, 111, 18, 0.906);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.add-to-cart:hover {
+  background-color: #0c4a52;
+}
+
+footer {
+  background-color: #000;
+  color: rgb(6, 237, 152);
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+

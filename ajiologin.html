@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    .message {
+      text-align: center;
+      margin-top: 10px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>AJIO Login</h2>
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Enter email" required />
+      <input type="password" id="password" placeholder="Enter password" required />
+      <button type="submit">Login</button>
+      <div class="message" id="message"></div>
+    </form>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    const messageDiv = document.getElementById('message');
+
+    loginForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Dummy check - replace with real authentication in production
+      if (email === "admin@example.com" && password === "admin123") {
+        messageDiv.style.color = "green";
+        messageDiv.textContent = "Login successful!";
+        // Optionally redirect
+        // window.location.href = "dashboard.html";
+      } else {
+        messageDiv.style.color = "red";
+        messageDiv.textContent = "Invalid email or password!";
+      }
+    });
+  </script>
+
+</body>
+</html>

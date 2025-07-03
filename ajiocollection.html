@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJIO Men's Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 30px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      position: relative;
+    }
+
+    .menu-item {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      z-index: 1000;
+    }
+
+    .menu-item:hover .dropdown {
+      display: grid;
+    }
+
+    .dropdown h4 {
+      margin-bottom: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .dropdown ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown ul li {
+      margin: 5px 0;
+      font-size: 13px;
+    }
+
+    .dropdown ul li:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    .category {
+      min-width: 160px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="menu">
+    <div class="menu-item">
+      <span>MEN</span>
+      <div class="dropdown">
+        <div class="category">
+          <h4>CLOTHING</h4>
+          <ul>
+            <li>Western Wear</li>
+            <li>Ethnic & Festive</li>
+            <li>Grooming</li>
+            <li>Plus Size</li>
+            <li>AJIO Global</li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4>WESTERN WEAR</h4>
+          <ul>
+            <li>Jackets & Coats</li>
+            <li>Jeans</li>
+            <li>Shirts</li>
+            <li>Shorts & 3/4ths</li>
+            <li>Sweatshirts & Hoodies</li>
+            <li>Track Pants</li>
+            <li>Trousers & Pants</li>
+            <li>T-Shirts</li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4>FOOTWEAR</h4>
+          <ul>
+            <li>Casual Shoes</li>
+            <li>Flip-Flops & Slippers</li>
+            <li>Formal Shoes</li>
+            <li>Sandals</li>
+            <li>Sneakers</li>
+            <li>Sports Shoes</li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4>ACCESSORIES</h4>
+          <ul>
+            <li>Backpacks</li>
+            <li>Bags & Wallets</li>
+            <li>Belts</li>
+            <li>Caps & Hats</li>
+            <li>Sunglasses & Frames</li>
+            <li>Watches</li>
+          </ul>
+        </div>
+        <div class="category">
+          <h4>FEATURED</h4>
+          <ul>
+            <li>Bags Under 1499</li>
+            <li>Footwear Under 1499</li>
+            <li>Jeans Under 1199</li>
+            <li>Shorts & 3/4ths Under 699</li>
+            <li>Diwali Kurta</li>
+            <li>Readymade Dhotis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>
