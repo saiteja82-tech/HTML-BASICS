@@ -1,0 +1,54 @@
+body {
+  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 30px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: green;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.hide {
+    display: none;
+}
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background-color: white;
+  border: 2px solid yellowgreen;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell:hover {
+  background-color: #7395ea;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+#reset {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: rgb(0, 157, 255);
+  border: 2px solid palevioletred;
+  border-radius: 5px;
+}
+
+
