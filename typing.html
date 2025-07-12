@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="typing.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button red"></span>
+                <span class="terminal-button yellow"></span>
+                <span class="terminal-button green"></span>
+            </div>
+            <div class="terminal-title">Typing Speed Test</div>
+        </div>
+        <div class="terminal-body">
+            <div class="test-container">
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+                <div class="sentence-display" id="sentenceDisplay"></div>
+                <textarea class="input-field" id="inputField" placeholder="Start typing here..."></textarea>
+                <div class="timer" id="timer">00:00</div>
+                <button class="btn-reset" id="resetBtn">Reset Test</button>
+            </div>
+            
+            <div class="result-container" id="resultContainer">
+                <h2>Test Results</h2>
+                <div class="result-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="wpmStat">0</span>
+                        <span class="stat-label">WPM</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="accuracyStat">0</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="timeStat">0</span>
+                        <span class="stat-label">Seconds</span>
+                    </div>
+                </div>
+                <div class="stat-details">
+                    <p>Characters: <span id="charactersStat">0</span> (<span id="correctStat">0</span> correct, <span id="incorrectStat">0</span> incorrect)</p>
+                </div>
+                <button class="btn-try-again" id="tryAgainBtn">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="typing.js"></script>
+</body>
+</html>

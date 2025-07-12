@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Flip Card Game</title>
+    <link rel="stylesheet" href="flipcard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Memory Flip Card Game</h1>
+        
+        <div class="game-info">
+            <div class="stats">
+                <div class="timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="time">0</span>s
+                </div>
+                <div class="moves">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span id="moves">0</span> moves
+                </div>
+            </div>
+            <div class="stars">
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+                <span class="star"><i class="fas fa-star"></i></span>
+            </div>
+            <button id="restart" class="btn">Restart</button>
+        </div>
+        
+        <div class="game-board" id="game-board"></div>
+        
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <h2>Congratulations!</h2>
+                <p>You completed the game in <span id="final-time">0</span> seconds with <span id="final-moves">0</span> moves.</p>
+                <p>Your rating: <span id="final-rating"></span></p>
+                <button id="play-again" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="flipcard.js"></script>
+</body>
+</html>
